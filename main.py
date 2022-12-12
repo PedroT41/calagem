@@ -31,8 +31,9 @@ def calcular(op):
         float(e_PRNT.get())
 
         if op == 1:
-            t = float(e_Ca.get()) + float(e_Mg.get()) + float(e_K.get()) + float(e_AlH.get())
-            v1 = ((float(e_Ca.get()) + float(e_Mg.get()) + float(e_K.get()))*100) / t
+            k = float(e_K.get()) / 391
+            t = float(e_Ca.get()) + float(e_Mg.get()) + k + float(e_AlH.get())
+            v1 = ((float(e_Ca.get()) + float(e_Mg.get()) + k)*100) / t
             x = (float(e_v2.get()) - v1)*t/ float(e_PRNT.get())
 
         elif op == 2:
